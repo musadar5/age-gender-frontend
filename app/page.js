@@ -17,7 +17,7 @@ export default function Home() {
     formData.append("file", file);
 
     setLoading(true);
-    const res = await fetch("age-gender-backend-production.up.railway.app/predict", {
+    const res = await fetch("https://age-gender-backend-production.up.railway.app/predict", {
       method: "POST",
       body: formData,
     });
